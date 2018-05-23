@@ -21,4 +21,4 @@ shell:
 	sudo $(SINGULARITY) shell $(IMG_NAME)
 
 scp:
-	scp $(IMG_NAME) ua-sftp:/rsgprs/bhurwitz/scottdaniel/singularity-images/
+	scp $(IMG_NAME) ua-sftp:/rsgrps/bhurwitz/scottdaniel/singularity-images
