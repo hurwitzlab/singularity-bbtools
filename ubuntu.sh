@@ -25,13 +25,11 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     
     mkdir /apps
     cd /apps
-    wget https://astuteinternet.dl.sourceforge.net/project/bbmap/BBMap_37.55.tar.gz -O bbmap.tar.gz
+    wget --no-check-certificate https://astuteinternet.dl.sourceforge.net/project/bbmap/BBMap_37.55.tar.gz -O bbmap.tar.gz
     sudo tar -xzf bbmap.tar.gz
     sudo ln -s /apps/bbmap /usr/bin/bbmap
 
     rm bbmap.tar.gz
-    #create a directory to work in
-    mkdir /work
 
     #so we dont get those stupid perl warnings
     locale-gen en_US.UTF-8
@@ -39,3 +37,5 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     #so we dont get those stupid worning on hpc/pbs
     mkdir /extra
     mkdir /xdisk
+    mkdir /rsgrps
+    mkdir -p /cm/shared
